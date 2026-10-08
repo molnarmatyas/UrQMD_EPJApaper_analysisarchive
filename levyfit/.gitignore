@@ -1,0 +1,15 @@
+exe/*
+object/*
+results/*
+dunnowhatfor/*
+*.log
+*.txt
+**/*.root
+**/*.exe
+**/*.pdf
+**/*.txt
+**/*.log
+**/*.out*
+**/*.o
+**/*.d
+.vscode

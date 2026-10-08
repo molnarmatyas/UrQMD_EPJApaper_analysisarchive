@@ -1,0 +1,12 @@
+This repository is a bareback version of the EMISSIONSOURCE repo: 
+https://github.com/molnarmatyas/EMISSIONSOURCE 
+created as an archive for the analysis presented in the EPJA paper "Mátyás Molnár et al. Pion emission source shape in UrQMD Au + Au collisions at STAR energies".
+
+In order to run the full analysis, you need to have simulation data from UrQMD. The data used in this analysis was generated using version 3.4 of UrQMD, which can be downloaded e.g. from this fork: https://github.com/sh1r4s3/urqmd
+The simulation can be run using the runall.bash script in the urqmd-3.4 directory. Keep in mind that the full simulation would consume months of CPU time on a single core. 
+
+After simulation data is ready, in order to run the full analysis:
+
+time ./do_all_urqmd.sh 1 &> allurqmd.log &
+
+Also keep in mind that the analysis might consume cca. 20 GB of RAM at its peak even on a single core. Before running the analysis, study carefully the comments in the beginning of the do_all_urqmd.sh script.
